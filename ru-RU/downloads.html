@@ -1,8 +1,8 @@
 ---
 layout: ru-RU/basic
-title: Загрузкм &middot; The Rust Programming Language
+title: Загрузки &middot; The Rust Programming Language
 ---
-    <h1>Загрузкм</h1>
+    <h1>Загрузки</h1>
 
     <hr>
 
@@ -13,9 +13,9 @@ title: Загрузкм &middot; The Rust Programming Language
         <p>
 	  
           <a href="http://blog.rust-lang.org{{ site.stable_blog }}">
-	    текущий стабильный релиз. 
+	    Текущий стабильный релиз. 
 	  </a>
-	   Обновление каждые 6 недель,каждый новый релиз поддерживает обратную совместимость
+	   Обновление каждые 6 недель, каждый новый релиз поддерживает обратную совместимость
         </p>
       </div>
       <div class="col-md-8">
@@ -51,7 +51,7 @@ title: Загрузкм &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>Легкий путь установки на Linux и Mac,просто запустите код в консоли :</p>
+        <p>Самый простой способ на Linux и Mac-просто запустите команду в консоли :</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh</code></pre>
       </div>
     </div>
@@ -62,9 +62,9 @@ title: Загрузкм &middot; The Rust Programming Language
       <div class="col-md-4 side-header">
         <h2 id="beta">Beta&nbsp; ({{ site.beta }})</h2>
         <p>
-	Превью предстоящего стабильного релиза, предназначенный для тестирования 	авторами crate. Обновляется каждые шесть месяцев.
+	Превью предстоящего стабильного релиза, предназначенный для тестирования авторами контейнеров. Обновляется каждые шесть недель.
         </p>
-        <p><em>Scheduled for stable release<br/>{{ site.beta_date }}</em>.<p>
+        <p><em>Стабильный релиз запланирован на<br/>{{ site.beta_date }}</em>.<p>
       </div>
       <div class="col-md-8">
         <table class="table-features table-installers"><tbody>
@@ -100,7 +100,7 @@ title: Загрузкм &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>Легкий путь установки beta релиза на Linux и Mac,просто запустите код в консоли:</p>
+        <p>Самый простой способ beta релиза на Linux и Mac-просто запустите эту команду из консоли:</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=beta</code></pre>
       </div>
     </div>
@@ -111,9 +111,9 @@ title: Загрузкм &middot; The Rust Programming Language
       <div class="col-md-4 side-header">
         <h2 id="nightly">Nightly&nbsp; ({{ site.nightly }})</h2>
         <p>
-        Текущий  development branch.
+        Текущая ветка разработки.
 	Включает  <a href="https://doc.rust-lang.org/book/nightly-rust.html">нестабильные вещи</a>
-	Которые доступны только в development branch .
+	,которые доступны только в ветви для разработки.
         </p>
       </div>
       <div class="col-md-8">
@@ -150,7 +150,7 @@ title: Загрузкм &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>Легкий путь установки nightly branch  на Linux и Mac,просто запустите код в консоли:</p>
+        <p>Самый простой способ получить ночную сборку на Linux и Mac-просто запустите эту команду из консоли:</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly</code></pre>
       </div>
     </div>
@@ -160,7 +160,7 @@ title: Загрузкм &middot; The Rust Programming Language
     <div class="row">
       <div class="col-md-12">
       <p>
-        Посмотреть другие загрузки  <a href="https://static.rust-lang.org/dist/index.html">в архиве.</a>
+        Посмотреть другие загрузки <a href="https://static.rust-lang.org/dist/index.html">в архиве.</a>
       </p>
       </div>
     </div>
@@ -173,29 +173,29 @@ title: Загрузкм &middot; The Rust Programming Language
 	<p>
 	  <em>†</em>
 	  Есть два 
-	  <a href="https://en.wikipedia.org/wiki/Application_binary_interface">ABIs</a>
-	  в windows используеться родная (native) (MSVC) ABI используемая в
+	  <a href="https://en.wikipedia.org/wiki/Application_binary_interface">ABI:</a>
+	  в Windows используется родная (native) (MSVC) ABI используемая в
 	  <a href="https://www.visualstudio.com">Visual Studio</a>,
 	  и GNU ABI использующая 
 	  <a href="https://gcc.gnu.org/">GCC toolchain</a>.
-	  Какую версию Rust выбрать зависит от того какие с/с++ библиотеки вы используете :
-	  для взаимодействия с библиотеками, собранными в VS, мы используем MSVC билд версию Rust. 
-	  Для взаимодействия с GNU програмным обеспечением  мы используем 
+	  Какую версию Rust выбрать зависит от того, какие C/C++ библиотеки вы используете:
+	  для взаимодействия с библиотеками, собранными в VS мы используем MSVC билд версию Rust. 
+	  Для взаимодействия с GNU програмным обеспечением мы используем 
 	  <a href="https://msys2.github.io/">MinGW/MSYS2 toolchain</a>
 	  
 	</p>
 	<p>
-	  MSVC билд  Rust допалнительно зависит от Microsoft Visual
-          C++ build tools for Visual Studio 2013 или позднее.
-	  Самый простой путь получения утилит сборки, является установка
+	  MSVC билд Rust дополнительно зависит от Microsoft Visual
+          C++ build tools for Visual Studio 2013 или более поздней версии.
+	  Самый простой путь получения утилит сборки является установка
 	  <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools">
 	  Microsoft Visual C++ Build Tools 2015</a>
-	  Другой вариант,это  <a href="https://www.visualstudio.com/downloads/">установить </a>
-	  Visual Studio 2015 или Visual Studio 2013, и вовремя  установки выбрать  "C++ tools".
-	Никакого дополнительного  программного обеспечения не требуется для базовой сборки типа GNU.
+	  Другой вариант это  <a href="https://www.visualstudio.com/downloads/">установить </a>
+	  Visual Studio 2015 или Visual Studio 2013, и во время установки выбрать "C++ tools".
+	Для базового использования сборки GNU не требуется никакого дополнительного ПО.
 	</p>
 	<p>
-	  Поддержка в Rust  GNU ABI являеться более стабильной, и рекомендуется для 	повседневного(обычного,типичного)использования.
+	  Поддержка в Rust GNU ABI является более стабильной и рекомендуется для повседневного использования.
 	</p>
     </div>
   </div>
