@@ -1,8 +1,8 @@
 ---
-layout: ru-RU/untranslated
-title: Downloads &middot; The Rust Programming Language
+layout: ru-RU/basic
+title: Загрузки &middot; The Rust Programming Language
 ---
-    <h1>Downloads</h1>
+    <h1>Загрузки</h1>
 
     <hr>
 
@@ -11,11 +11,11 @@ title: Downloads &middot; The Rust Programming Language
         <h2 id="stable">{{ site.stable }}&nbsp;</h2>
         <h3>{{ site.stable_date }}</h3>
         <p>
-	  The
+	  
           <a href="http://blog.rust-lang.org{{ site.stable_blog }}">
-	    current stable release of Rust
+	    Текущий стабильный релиз. 
 	  </a>
-	  , updated every six weeks and backwards-compatible.
+	   Обновление каждые 6 недель, каждый новый релиз поддерживает обратную совместимость
         </p>
       </div>
       <div class="col-md-8">
@@ -51,7 +51,7 @@ title: Downloads &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>An easy way to install the stable binaries for Linux and Mac is to run this in your shell:</p>
+        <p>Самый простой способ на Linux и Mac-просто запустите команду в консоли :</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh</code></pre>
       </div>
     </div>
@@ -62,10 +62,9 @@ title: Downloads &middot; The Rust Programming Language
       <div class="col-md-4 side-header">
         <h2 id="beta">Beta&nbsp; ({{ site.beta }})</h2>
         <p>
-	A preview of the upcoming stable release, intended for testing by
-	crate authors. Updated every six weeks and as needed.
+	Превью предстоящего стабильного релиза, предназначенный для тестирования авторами контейнеров. Обновляется каждые шесть недель.
         </p>
-        <p><em>Scheduled for stable release<br/>{{ site.beta_date }}</em>.<p>
+        <p><em>Стабильный релиз запланирован на<br/>{{ site.beta_date }}</em>.<p>
       </div>
       <div class="col-md-8">
         <table class="table-features table-installers"><tbody>
@@ -101,7 +100,7 @@ title: Downloads &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>An easy way to install the beta binaries for Linux and Mac is to run this in your shell:</p>
+        <p>Самый простой способ beta релиза на Linux и Mac-просто запустите эту команду из консоли:</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=beta</code></pre>
       </div>
     </div>
@@ -112,10 +111,9 @@ title: Downloads &middot; The Rust Programming Language
       <div class="col-md-4 side-header">
         <h2 id="nightly">Nightly&nbsp; ({{ site.nightly }})</h2>
         <p>
-        The current development branch.
-	It includes
-	<a href="https://doc.rust-lang.org/book/nightly-rust.html">unstable features</a>
-	that are not available in the betas or stable releases.
+        Текущая ветка разработки.
+	Включает  <a href="https://doc.rust-lang.org/book/nightly-rust.html">нестабильные вещи</a>
+	,которые доступны только в ветви для разработки.
         </p>
       </div>
       <div class="col-md-8">
@@ -144,7 +142,7 @@ title: Downloads &middot; The Rust Programming Language
           <tr><td>&nbsp;</td></tr>
           <tr>
           <td class="inst-type"></td>
-          <td colspan="2"><a href="https://static.rust-lang.org/dist/rustc-nightly-src.tar.gz"><div class="inst-button">Source</div></a></td>
+          <td colspan="2"><a href="https://static.rust-lang.org/dist/rustc-nightly-src.tar.gz"><div class="inst-button">Sources</div></a></td>
           </tr>
         </tbody></table>
       </div>
@@ -152,7 +150,7 @@ title: Downloads &middot; The Rust Programming Language
 
      <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <p>An easy way to install the nightly binaries for Linux and Mac is to run this in your shell:</p>
+        <p>Самый простой способ получить ночную сборку на Linux и Mac-просто запустите эту команду из консоли:</p>
         <pre><code>curl -sSf https://static.rust-lang.org/rustup.sh | sh -s -- --channel=nightly</code></pre>
       </div>
     </div>
@@ -162,7 +160,7 @@ title: Downloads &middot; The Rust Programming Language
     <div class="row">
       <div class="col-md-12">
       <p>
-        Discover other downloads in <a href="https://static.rust-lang.org/dist/index.html">the archives.</a>
+        Посмотреть другие загрузки <a href="https://static.rust-lang.org/dist/index.html">в архиве.</a>
       </p>
       </div>
     </div>
@@ -174,32 +172,30 @@ title: Downloads &middot; The Rust Programming Language
 	<a id="win-foot"></a>
 	<p>
 	  <em>†</em>
-	  There are two prominent
-	  <a href="https://en.wikipedia.org/wiki/Application_binary_interface">ABIs</a>
-	  in use on Windows: the native (MSVC) ABI used by
+	  Есть два 
+	  <a href="https://en.wikipedia.org/wiki/Application_binary_interface">ABI:</a>
+	  в Windows используется родная (native) (MSVC) ABI используемая в
 	  <a href="https://www.visualstudio.com">Visual Studio</a>,
-	  and the GNU ABI used by the
+	  и GNU ABI использующая 
 	  <a href="https://gcc.gnu.org/">GCC toolchain</a>.
-	  Which version of Rust you need depends largely on what C/C++ libraries you want to interoperate with:
-	  for interop with software produced by Visual Studio use the MSVC build of Rust; for interop with
-	  GNU software built using the
+	  Какую версию Rust выбрать зависит от того, какие C/C++ библиотеки вы используете:
+	  для взаимодействия с библиотеками, собранными в VS мы используем MSVC билд версию Rust. 
+	  Для взаимодействия с GNU програмным обеспечением мы используем 
 	  <a href="https://msys2.github.io/">MinGW/MSYS2 toolchain</a>
-	  use the GNU build.
+	  
 	</p>
 	<p>
-	  MSVC builds of Rust additionally require the Microsoft Visual
-          C++ build tools for Visual Studio 2013 or later.
-	  The easiest way to acquire the build tools is by installing
+	  MSVC билд Rust дополнительно зависит от Microsoft Visual
+          C++ build tools for Visual Studio 2013 или более поздней версии.
+	  Самый простой путь получения утилит сборки является установка
 	  <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools">
 	  Microsoft Visual C++ Build Tools 2015</a>
-	  which provides just the Visual C++ build tools.
-	  Alternately, you can <a href="https://www.visualstudio.com/downloads/">install</a>
-	  Visual Studio 2015 or Visual Studio 2013 and during install select the "C++ tools".
-	  No additional software installation is necessary for basic use of the GNU build.
+	  Другой вариант это  <a href="https://www.visualstudio.com/downloads/">установить </a>
+	  Visual Studio 2015 или Visual Studio 2013, и во время установки выбрать "C++ tools".
+	Для базового использования сборки GNU не требуется никакого дополнительного ПО.
 	</p>
 	<p>
-	  Rust's support for the GNU ABI is more mature, and is recommended for typical
-	  uses.
+	  Поддержка в Rust GNU ABI является более стабильной и рекомендуется для повседневного использования.
 	</p>
     </div>
   </div>
